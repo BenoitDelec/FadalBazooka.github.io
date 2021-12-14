@@ -8,5 +8,9 @@ share-img: /assets/img/FLAG.jpeg
 use-site-title: true
 ---
 
-Human movement and mobility patterns have been studied on a global scale in the paper “Friendship and Mobility: User Movement in Location-Based Social Network.” With the use of cell-phone location data as well as two online-based social networks (Gowalla and Brightkite), the authors revealed that human movement can be best summarized as a combination of local repetitive movements and random jumps that highly correlate with their social networks. Here we’ll be diving into the complex phenomenon of human movement, but in a much more specific context: that of megalopolises! Indeed, let's take a look at the effect of human mobility in much more densely populated areas, namely New York City and Tokyo!
+Gender norms are social principles that govern the behavior of all of us in society and restrict our gender identity into what is considered to be appropriate. These are neither static nor universal and change over time, and can result in inequalities.
+
+More and more countries have recently legalized and recognized same-sex marriage, sometimes following long legal procedures. In Switzerland, this law was introduced in 2013, passed in 2020 by the parliament and adopted by referendum in September 2021. The feminism topic also indicates real changes in society. LGBT+ issues are also extremely present in public life, with emerging pride movements and pure gender questioning.
+
+We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization.
 
