@@ -14,3 +14,8 @@ More and more countries have recently legalized and recognized same-sex marriage
 
 We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization.
 
+### Research questions 
+
+- How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
+- Which countries' opinions significantly contrast with others ?
+- Does the author's age significantly lead to different trends, i.e. does the youngest authors generally have broader gender norms
