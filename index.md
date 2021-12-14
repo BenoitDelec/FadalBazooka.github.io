@@ -29,4 +29,6 @@ We will focus on observing changes in the speakers’ opinion on the topics of g
 - Which countries' opinions significantly contrast with others ?
 - Does the author's age significantly lead to different trends, i.e. does the youngest authors generally have broader gender norms ? 
 
+More research is to be done
+
 
