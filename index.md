@@ -15,7 +15,7 @@ More and more countries have recently legalized and recognized same-sex marriage
 ### Dataset
 
 We acquired data from A Corpus of Quotations from a Decade of News, untitled *Quotebank*. It is a dataset of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. However, our analysis was restricted from the start of 2005 to mid-2020. In addition, we used the free and open knowledge base *Wikidata* in order to get speaker's attributes such as nationalities and occupations.
-
+<img src="assets/img/wikidata_logo.png" alt="wikidata_logo" width="210" style="float:right"/>
 
 
 ### Focus & Research questions 
