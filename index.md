@@ -47,4 +47,6 @@ The disparity between speakers can also be seen in their nationality distributio
 <!--- _(histogram showing check in hours)!_ -->
 <img src="assets/img/nationalities.png" class="center"/>
 
+<!--- _(add map)!_ -->
+{% include map_world.html %}
 
