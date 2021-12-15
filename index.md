@@ -31,7 +31,7 @@ We will focus on observing changes in the speakers’ opinion on the topics of g
 
 Before answering to these questions, let's first have a visual look on our dataset.
 
-### First glimpse of the data
+### First glimpse at the data
 <!--- _(add bar plot)!_ -->
 {% include years_distribution.html %}
 Each year from 2015 to 2019 is composed between 20K to 50K quotes. The number of quotes in 2020 is below 10K as we only had access to a part of the year!  
@@ -40,6 +40,7 @@ Most of the quotes are related to the LGBT community (~40%), whereas the feminis
 <!--- _(add bar plot)!_ -->
 {% include gender_distribution2.html %}
 
+The speaker's gender proportions are quite unbalanced
 
 
 
