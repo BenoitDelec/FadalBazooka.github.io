@@ -46,7 +46,7 @@ The disparity between speakers can also be seen in their nationality distributio
 
 
 <!--- _(histogram showing check in hours)!_ -->
-<img src="assets/img/no_cut_natio.png" class="center"/>
+<img src="assets/img/nationalities.png" class="center"/>
 
 Even though speaker's nationalities are not well balanced, below we can see that they are well spread all around the world.  
 <!--- _(add map)!_ -->
