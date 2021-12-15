@@ -8,7 +8,6 @@ share-img: /assets/img/FLAG.jpeg
 use-site-title: true
 ---
 
-[here](https://350.org/fr/)
 
 Gender norms are social principles that govern the behavior of all of us in society and restrict our gender identity into what is considered to be appropriate. These are neither static nor universal and change over time, and can result in inequalities.
 
@@ -36,8 +35,10 @@ Before answering to these questions, let's first have a visual look on our datas
 <!--- _(add bar plot)!_ -->
 {% include years_distribution.html %}
 Each year from 2015 to 2019 is composed between 20K to 50K quotes. The number of quotes in 2020 is below 10K as we only had access to a part of the year!  
-Most of the quotes are related to the LGBT community, 
-Overall, we have access to enough data to make a data analysis on gender norms.
+Most of the quotes are related to the LGBT community (~40%), whereas the feminism topic is a bit less represented (~6-7%). However, we have access to enough data to make a complete analysis on gender norms.
+
+<!--- _(add bar plot)!_ -->
+{% include years_distribution.html %}
 
 
 
