@@ -96,7 +96,7 @@ post_search: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
-full-width: true
+
 
 # --- Colours / background image --- #
 
@@ -127,6 +127,7 @@ footer-hover-col: "#0085A1"
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
 #  - "/assets/css/custom-styles.css"
+full-width: true
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -237,6 +238,7 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  full-width: true
 
 # Exclude these files from production site
 exclude:
