@@ -44,5 +44,7 @@ While over 60% of the speakers are men, the *Other* category represents in desce
 
 The disparity between speakers can also be seen in their nationality distribution :
 
+<!--- _(histogram showing check in hours)!_ -->
+<img src="assets/plots/nationalities.png" class="center"/>
 
 
