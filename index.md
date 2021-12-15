@@ -50,3 +50,13 @@ As well as their occupation distribution :
 
 <img src="assets/img/no_cut_occupations.png" class = "center">
 
+American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present. It will be now interesting to answer our first research question : 
+
+-----------------
+## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
+
+
+
+
+
+
