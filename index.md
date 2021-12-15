@@ -8,16 +8,17 @@ share-img: /assets/img/FLAG.jpeg
 use-site-title: true
 ---
 
+[here](https://350.org/fr/)
+
 Gender norms are social principles that govern the behavior of all of us in society and restrict our gender identity into what is considered to be appropriate. These are neither static nor universal and change over time, and can result in inequalities.
 
-More and more countries have recently legalized and recognized same-sex marriage, sometimes following long legal procedures. In Switzerland, this law was introduced in 2013, passed in 2020 by the parliament and adopted by referendum in September 2021. The feminism topic also indicates real changes in society. LGBT+ issues are also extremely present in public life, with emerging pride movements and pure gender questioning. These topics have been more and more present in the media all over the world, and are still facing divergent opinions. In this review, we'll dive into this complex phenomenon, analyzing the different trends and opinions worldwide.
+More and more countries have recently legalized and recognized same-sex marriage, sometimes following long legal procedures. In Switzerland, this law was introduced in 2013, passed in 2020 by the parliament and adopted by referendum in September 2021. The feminism topic also indicates real changes in society. [LGBT](https://en.wikipedia.org/wiki/LGBT_community) issues are also extremely present in public life, with emerging pride movements and pure gender questioning. 
+These topics have been more and more present in the media all over the world, and are still facing divergent opinions. In this review, we'll dive into this complex phenomenon, analyzing the different trends and opinions worldwide.
 
 ### Dataset
 
 <img src="assets/img/wikidata_logo.png" alt="wikidata_logo" width="150" style="float:right"/>
 We acquired data from A Corpus of Quotations from a Decade of News, untitled *Quotebank*. It is a dataset of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. However, our analysis was restricted from the start of 2005 to mid-2020. In addition, we used the free and open knowledge base *Wikidata* in order to get speaker's attributes such as nationalities and occupations.
-
-
 
 
 
@@ -29,8 +30,14 @@ We will focus on observing changes in the speakers’ opinion on the topics of g
 - Which countries' opinions significantly contrast with others ?
 - Does the author's age significantly lead to different trends, i.e. does the youngest authors generally have broader gender norms ? 
 
+Before answering to these questions, let's first have a visual look on our dataset.
+
+### First glimpse of the data
 <!--- _(add bar plot)!_ -->
 {% include years_distribution.html %}
+Each year from 2015 to 2019 is composed between 20K to 50K quotes. The number of quotes in 2020 is below 10K as we only had access to a part of the year!  
+Most of the quotes are related to the LGBT community, 
+Overall, we have access to enough data to make a data analysis on gender norms.
 
 
 
