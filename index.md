@@ -57,5 +57,11 @@ American politicians are the ones talking the most on the gender norms, followed
 
 The first purpose of our analysis is to focus on a political aspect of same-sex relations, and in particular such a marriage legalization. We indeed believe that such this legal process became popular in countries following people agreement to integrate it in their public life. In this way, an increasing popularity of the same-sex mariage topic could correlate with legal outcomes.
 
+| Country | Number of quotes | Legalization date | Average sentiment (-1 to +1) | Sentiment evolution following legalization | Significance |
+|-------|--------|---------|---------|---------|---------|
+| United States of America | 4173 | 06/2015 | 0.19 | +0.01 | 38% |
+| Australia | 1869 | 12/2017 | 0.24 | -0.05 | 92% |
+| Ireland | 277 | 05/2015 | 0.26 | +0.30 | 99% |
+
 -----------------
 ## Which countries' opinions significantly contrast with others ?
