@@ -55,7 +55,7 @@ American politicians are the ones talking the most on the gender norms, followed
 -----------------
 ## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
 
-Trying to edit @William
+The first purpose of our analysis is to focus on a political aspect of same-sex relations, and in particular such a marriage legalization. We indeed believe that such this legal process became popular in countries following people agreement to integrate it in their public life. In this way, an increasing popularity of the same-sex mariage topic could correlate with legal outcomes.
 
-Test
-
+-----------------
+## Which countries' opinions significantly contrast with others ?
