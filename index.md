@@ -48,5 +48,8 @@ The disparity between speakers can also be seen in their nationality and occupat
 <!--- _(histogram showing check in hours)!_ -->
 <img src="assets/img/no_cut_natio.png" class="center"/>
 
+<!--- _(histogram showing check in hours)!_ -->
+<img src="assets/img/no_cut_occupations.png" class="center"/>
+
 
 
