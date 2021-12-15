@@ -52,6 +52,14 @@ As well as their occupation distribution :
 
 American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present. It will be now interesting to answer our first research question : 
 
+### What is sentiment analysis ?
+
+...
+
+### What is stance ?
+
+...
+
 -----------------
 ## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
 
