@@ -10,7 +10,7 @@ title: Recent trends in gender issues
 
 # Your name to show in the footer
 author: FadalBazooka
-
+full-width: true
 # --- List of links in the navigation bar --- #
 
 navbar-links:
@@ -238,7 +238,6 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
-  full-width: true
 
 # Exclude these files from production site
 exclude:
