@@ -44,6 +44,6 @@ While over 60% of the speakers are men, the *Other* category represents about 6%
 
 The disparity between speakers can also be seen in their nationality distributions :
 
-
-| <img src="assets/img/no_cut_natio.png" class="left"/> | <img src="assets/img/no_cut_occupations.png" class="right"/> |
+<img src="assets/img/no_cut_natio.png"/ class = "center">   
+<img src="assets/img/no_cut_occupations.png"/ class = "center">
 
