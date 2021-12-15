@@ -38,7 +38,7 @@ Each year from 2015 to 2019 is composed between 20K to 50K quotes. The number of
 Most of the quotes are related to the LGBT community (~40%), whereas the feminism topic is a bit less represented (~6-7%). However, we have access to enough data to make a complete analysis on gender norms.
 
 <!--- _(add bar plot)!_ -->
-{% include years_distribution.html %}
+{% include gender_distribution.html %}
 
 
 
