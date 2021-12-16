@@ -83,7 +83,7 @@ We could compute the following statistics in order to answer our question:
 
 | Country | Number of quotes | Legalization date | Average sentiment (-1 to +1) | Sentiment evolution following legalization | Significance |
 |:-------:|:--------:|:---------:|:---------:|:---------:|:---------:|
-| United States of America | 4'173 | 06/2015 | 0.19 | -0.05 | 96% |
+| United States of America | 4'173 | 06/2015 | 0.19 | -0.04 | 96% |
 | United Kingdom | 797 | 03/2014 | 0.12 | - | - |
 | Australia | 1'869 | 12/2017 | 0.24 | -0.05 | 92% |
 | Ireland | 277 | 11/2015 | 0.26 | +0.23 | 99% |
