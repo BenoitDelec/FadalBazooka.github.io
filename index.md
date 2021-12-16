@@ -54,7 +54,7 @@ American politicians are the ones talking the most on the gender norms, followed
 
 ### What is sentiment analysis ?
 
-Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to 1, corresponding to negative and postive extrema, respectively.
+Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively.
 
 ...
 
@@ -85,11 +85,11 @@ We could compute the following statistics in order to answer our question:
 
 | Country | Average sentiment <br> (-1 to +1) | Sentiment progress following legalization | Significance |
 |:-------:|:---------:|:---------:|:---------:|
-| United States of America | 0.19 | -0.04 | 96% |
-| United Kingdom | 0.12 | - | - |
-| Australia | 0.24 | -0.05 | 92% |
-| Ireland | 0.26 | +0.23 | 99% |
-| Canada | 0.13 | - | - |
+| United States of America | +0.19 | -0.04 | 96% |
+| United Kingdom | +0.12 | - | - |
+| Australia | +0.24 | -0.05 | 92% |
+| Ireland | +0.26 | +0.23 | 99% |
+| Canada | +0.13 | - | - |
 
 Analysis of the table : 
 
