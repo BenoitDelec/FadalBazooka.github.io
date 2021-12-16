@@ -91,7 +91,13 @@ We could compute the following statistics in order to answer our question:
 | Ireland | 0.26 | +0.23 | 99% |
 | Canada | 0.13 | - | - |
 
+Analysis of the table : 
+
 <img src="assets/img/Q1_plot_all.png" class = "center">
+
+Analysis of the plot 
+
+
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
