@@ -93,7 +93,7 @@ We could compute the following statistics in order to answer our question:
 
 From this table, some insights can be gathered : 
 
-Irish speakers are the ones showing the most positive sentiments about same-sex marriage (with a significance of 99%), followed by Australians and Americans. Overall, it is interesting to note that on average, between 2015 and 2020, none of them are expressing negative sentiments on average. However, it does not mean that all speaker have positive opinions on this topic, it might actually differ between years and events.
+Irish speakers are the ones showing the most positive sentiments about same-sex marriage. There are also the ones that progress (positively) the most in their sentiments after legalization of same-sex marriages (with a significance of 99%). They are followed by Australians, who on the contrary show a slight reluctance after legalization (with a significance of 92%). Finally, Americans are also less optimistic on this new event (slight decrease in sentiment). Overall, it is interesting to note that on average, between 2015 and 2020, none of the nationalities are expressing negative sentiments. However, it does not mean that all speakers have positive opinions on this topic, it might actually differ between years and other speaker's specific features.
 
 {% include interactive_legend.html %}
 
