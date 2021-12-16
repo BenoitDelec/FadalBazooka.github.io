@@ -57,7 +57,7 @@ Before taking a look at what our data can explain, let's get back to some progra
 -----------------
 ## What is sentiment analysis ?
 
-Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the *compound* score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive). The closer this *compound* to +1, the higher the positivity of the text.
+[Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the *compound* score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive). The closer this *compound* to +1, the higher the positivity of the text.
 
 ## What is stance ?
 
