@@ -112,3 +112,16 @@ Analysis of the plot
 ## Do our sentiment analysis of gender equality focused on feminism matches with renown related indexes ?
 
 ...
+
+
+## We need more data! 
+As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
+
+Firstly, we started by simple LSTM + Linear model to predict nationality and age of the quote’s speaker. To implement this we used PyTorch framework, wrote classes of dataset, training and model. As embedding we used Twitter-roBERTa-base pretrained tokenizer. But the model was too simple and we got ~30% by F1 metric. 
+So we took a more complex model - GPT2 in order to predict the nationality of the speaker by its quote. At the first sight, we got better results ~70% on the validation set. 
+<img src="assets/img/imbalanced.jpg" class = "center">
+But after checking the confusion matrix we found out that the model returns the most frequent value all the time, so we balanced classes. 
+<img src="assets/img/conf.jpg" class = "center">
+Finally we got much worse results which didn’t seem to improve as we saw by the validation loss plot. 
+<img src="assets/img/balanced.jpg" class = "center">
+Based on the quote it seems impossible to predict a nationality, because of the globalisation process and information spread on the Internet. Not many countries are completely isolated and there are always different sources of information, so people’s mindset can’t be defined by their location. 
