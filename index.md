@@ -97,6 +97,6 @@ We could compute the following statistics in order to answer our question:
 ...
 
 -----------------
-## Do our sentiment analysis of gender equality / feminism opinions per country matches with renown related indexes ?
+## Do our sentiment analysis of gender equality focused on feminism matches with renown related indexes ?
 
 ...
