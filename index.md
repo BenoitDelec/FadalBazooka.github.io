@@ -81,7 +81,7 @@ Given United Kingdom and Canada did undergo legal procedures before the first da
 
 We could compute the following statistics in order to answer our question: 
 
-| Country | Average sentiment (-1 to +1) | Sentiment evolution following legalization | Significance |
+| Country | Average sentiment <br> (-1 to +1) | Sentiment progress following legalization | Significance |
 |:-------:|:---------:|:---------:|:---------:|
 | United States of America | 0.19 | -0.04 | 96% |
 | United Kingdom | 0.12 | - | - |
