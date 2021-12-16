@@ -68,6 +68,7 @@ The first purpose of our analysis is to focus on a political aspect of same-sex 
 To compare the average sentiment on same-sex marriage before and after its legalization, we picked countries where the number of quotes could allow basic statistical assessments, by picking only those with at least 100 quotes related to this topic.
 
 The following table summarizes the data we may use for our analysis:
+
 | Country | Number of quotes | Legalization date |
 |:-------:|:--------:|:---------:|
 | United States of America | 4'173 | 06/2015 |
