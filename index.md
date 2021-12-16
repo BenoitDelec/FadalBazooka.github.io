@@ -54,7 +54,7 @@ American politicians are the ones talking the most on the gender norms, followed
 
 ### What is sentiment analysis ?
 
-Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them.
+Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to 1, corresponding to negative and postive extrema, respectively.
 
 ...
 
