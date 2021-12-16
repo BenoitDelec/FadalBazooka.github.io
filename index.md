@@ -25,8 +25,8 @@ We acquired data from [*Quotebank : A Corpus of Quotations from a Decade of News
 We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This bring us to the following questions: 
 
 - How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
-- Which countries' opinions significantly contrast with others ?
-- Does the author's age significantly lead to different trends, i.e. does the youngest authors generally have broader gender norms ? 
+- Which countries' opinions significantly contrast with others ? 
+- Is it possible to predict speaker's attributes based on quotes ?
 
 Before answering to these questions, let's first have a visual look on our dataset.
 
@@ -106,11 +106,6 @@ The upper series of plots allows to observe changes in sentiment scores when com
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
-
-...
-
------------------
-## Do our sentiment analysis of gender equality focused on feminism matches with renown related indexes ?
 
 ...
 
