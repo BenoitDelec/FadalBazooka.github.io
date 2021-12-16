@@ -57,13 +57,13 @@ Before taking a look at what our data can explain, let's get back to some progra
 -----------------
 ## What is sentiment analysis ?
 
-Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the compound score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1(most extreme negative) and +1 (most extreme positive). The more Compound score closer to +1, the higher the positivity of the text.
-
-...
+Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the *compound* score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive). The closer this *compound* to +1, the higher the positivity of the text.
 
 ## What is stance ?
 
-...
+Sentiment analysis is thus a useful way to quantify a feeling from a text, but it is based on emotions rather than opinions.
+
+Thus, [stance analysis](https://en.wikipedia.org/wiki/Stance_(linguistics)) goes beyond this border, by determining if two sentences converge to similar or different opinions. This technique provides a classification of a list quotes when comparing with a *model* quote, by categorizing them into 4 sets : *agree*, *disagree*, *uncertain*, and *unrelated*.
 
 -----------------
 ## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
@@ -102,7 +102,7 @@ Irish speakers are the ones showing the most positive sentiments about same-sex 
 
 <img src="assets/img/Q1_merged_plot_with_density.png" class = "center">
 
-The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. one should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes.
+The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes.
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
@@ -110,7 +110,8 @@ The upper series of plots allows to observe changes in sentiment scores when com
 ...
 
 -----------------
-## We need more data! 
+## Could we predict an author's nationality based on a quote ?
+
 As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
 
 Firstly, we started by simple LSTM + Linear model to predict nationality and age of the quote’s speaker. To implement this we used PyTorch framework, wrote classes of dataset, training and model. As embedding we used Twitter-roBERTa-base pretrained tokenizer. But the model was too simple and we got ~30% by F1 metric. 
