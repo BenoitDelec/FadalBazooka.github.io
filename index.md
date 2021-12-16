@@ -71,11 +71,11 @@ The following table summarizes the data we may use for our analysis:
 
 | Country | Number of quotes | Legalization date |
 |:-------:|:--------:|:---------:|
-| United States of America | 4'173 | [07/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_States) |
-| Australia | 1'869 | [12/2017](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Australia) |
-| United Kingdom | 797 | [03/2014](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_Kingdom) |
-| Ireland | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
-| Canada | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
+| United States of America (USA) | 4'173 | [07/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_States) |
+| Australia (AUS) | 1'869 | [12/2017](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Australia) |
+| United Kingdom (UK) | 797 | [03/2014](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_Kingdom) |
+| Ireland (IRE) | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
+| Canada (CAN) | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
 
 Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these leglizations.
 
