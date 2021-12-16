@@ -77,13 +77,17 @@ The following table summarizes the data we may use for our analysis:
 | Ireland | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
 | Canada | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
 
-We could thus compute the following statistics in order to answer our question: 
+Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these leglizations.
+
+We could compute the following statistics in order to answer our question: 
 
 | Country | Number of quotes | Legalization date | Average sentiment (-1 to +1) | Sentiment evolution following legalization | Significance |
 |:-------:|:--------:|:---------:|:---------:|:---------:|:---------:|
 | United States of America | 4'173 | 06/2015 | 0.19 | -0.05 | 96% |
+| United Kingdom | 797 | 03/2014 | 0.12 | - | - |
 | Australia | 1'869 | 12/2017 | 0.24 | -0.05 | 92% |
 | Ireland | 277 | 11/2015 | 0.26 | +0.23 | 99% |
+| Canada | 259 | 07/2005 | 0.13 | - | - |
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
