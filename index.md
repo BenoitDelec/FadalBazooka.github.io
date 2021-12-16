@@ -93,3 +93,10 @@ We could compute the following statistics in order to answer our question:
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
+
+...
+
+-----------------
+## Do our sentiment analysis of gender equality / feminism opinions per country matches with renown related indexes ?
+
+...
