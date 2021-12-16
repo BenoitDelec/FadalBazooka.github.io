@@ -96,7 +96,6 @@ We could compute the following statistics in order to answer our question:
 
 Analysis of the table : 
 
-<img src="assets/img/Q1_plot_all.png" class = "center">
 
 Analysis of the plot 
 
