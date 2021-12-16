@@ -54,7 +54,7 @@ American politicians are the ones talking the most on the gender norms, followed
 
 ### What is sentiment analysis ?
 
-Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively.
+Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the compound score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1(most extreme negative) and +1 (most extreme positive). The more Compound score closer to +1, the higher the positivity of the text.
 
 ...
 
@@ -91,6 +91,9 @@ We could compute the following statistics in order to answer our question:
 | Ireland | +0.26 | +0.23 | 99% |
 | Canada | +0.13 | - | - |
 
+From this table, some insights can be gathered : 
+
+Irish speakers are the ones showing the most positive sentiments about same-sex marriage (with a significance of 99%), followed by Australians and Americans. Overall, it is interesting to note that on average, between 2015 and 2020, none of them are expressing negative sentiments on average. However, it does not mean that all speaker have positive opinions on this topic, it might actually differ between years and events.
 
 {% include interactive_legend.html %}
 
