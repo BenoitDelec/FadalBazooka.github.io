@@ -101,7 +101,7 @@ Irish speakers are the ones showing the most positive sentiments about same-sex 
 
 <img src="assets/img/Q1_merged_plot_with_density.png" class = "center">
 
-... Analysis of the plot ...
+The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. one should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity if same-sex marriage decreases straight after its legalization.
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
