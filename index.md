@@ -71,19 +71,19 @@ The following table summarizes the data we may use for our analysis:
 
 | Country | Number of quotes | Legalization date |
 |:-------:|:--------:|:---------:|
-| United States of America | 4'173 | 06/2015 |
-| Australia | 1'869 | 12/2017 |
-| United Kingdom | 797 | 03/2014 |
-| Ireland | 277 | 05/2015 |
-| Canada | 259 | 07/2005 |
+| United States of America | 4'173 | [07/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_States) |
+| Australia | 1'869 | [12/2017](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Australia) |
+| United Kingdom | 797 | [03/2014](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_United_Kingdom) |
+| Ireland | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
+| Canada | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
 
 We could thus compute the following statistics in order to answer our question: 
 
 | Country | Number of quotes | Legalization date | Average sentiment (-1 to +1) | Sentiment evolution following legalization | Significance |
 |:-------:|:--------:|:---------:|:---------:|:---------:|:---------:|
-| United States of America | 4'173 | 06/2015 | 0.19 | +0.01 | 38% |
+| United States of America | 4'173 | 06/2015 | 0.19 | -0.05 | 96% |
 | Australia | 1'869 | 12/2017 | 0.24 | -0.05 | 92% |
-| Ireland | 277 | 05/2015 | 0.26 | +0.30 | 99% |
+| Ireland | 277 | 11/2015 | 0.26 | +0.23 | 99% |
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
