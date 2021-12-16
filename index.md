@@ -86,10 +86,10 @@ We could compute the following statistics in order to answer our question:
 | Country | Average sentiment <br> (-1 to +1) | Sentiment progress following legalization | Significance |
 |:-------:|:---------:|:---------:|:---------:|
 | United States of America | +0.19 | -0.04 | 96% |
-| United Kingdom | +0.12 | - | - |
+| United Kingdom | +0.22 | - | - |
 | Australia | +0.24 | -0.05 | 92% |
 | Ireland | +0.26 | +0.23 | 99% |
-| Canada | +0.13 | - | - |
+| Canada | +0.26 | - | - |
 
 From this table, some insights can be gathered : 
 
