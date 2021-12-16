@@ -97,7 +97,7 @@ Analysis of the table :
 
 Analysis of the plot 
 
-<img src="assets/img/Q1_merged_plot_all.png" class = "center">
+<img src="assets/img/Q1_merged_plot_all (2).png" class = "center">
 
 -----------------
 ## Which countries' opinions significantly contrast with others ?
