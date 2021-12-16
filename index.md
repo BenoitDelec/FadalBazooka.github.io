@@ -23,7 +23,7 @@ We acquired data from [*Quotebank : A Corpus of Quotations from a Decade of News
 
 ### Focus & Research questions 
 
-We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This bring us to the following questions : 
+We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This bring us to the following questions: 
 
 - How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
 - Which countries' opinions significantly contrast with others ?
@@ -42,23 +42,26 @@ Most of the quotes are related to the LGBT community (~40%), whereas the feminis
 
 While over 60% of the speakers are men, the *Other* category represents about 6% which in descending order of frequency appears like: [transgender female](https://en.wikipedia.org/wiki/Trans_woman), [gender fluid](https://www.health.harvard.edu/blog/gender-fluidity-what-it-means-and-why-support-matters-2020120321544), [transgender male](https://en.wikipedia.org/wiki/Trans_man), [non binary](https://en.wikipedia.org/wiki/Non-binary_gender), [bigender](https://gender.fandom.com/wiki/Bigender), [genderqueer](https://www.webmd.com/a-to-z-guides/what-does-genderqueer-mean), [shemale](https://en.wikipedia.org/wiki/Shemale), [two-spirit](https://en.wikipedia.org/wiki/Two-spirit), [third gender](https://en.wikipedia.org/wiki/Third_gender).
 
-The disparity between speakers can also be seen in their nationality distribution :
+The disparity between speakers can also be seen in their nationality distribution:
 
 <img src="assets/img/no_cut_natio.png" class = "center">   
 
-As well as their occupation distribution : 
+As well as their occupation distribution: 
 
 <img src="assets/img/no_cut_occupations.png" class = "center">
 
-American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present. It will be now interesting to answer our first research question : 
+American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
 
-### What is sentiment analysis ?
+Before taking a look at what our data can explain, let's get back to some programming concepts we will need in this analysis.
+
+-----------------
+## What is sentiment analysis ?
 
 Sentiment analysis, also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the compound score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1(most extreme negative) and +1 (most extreme positive). The more Compound score closer to +1, the higher the positivity of the text.
 
 ...
 
-### What is stance ?
+## What is stance ?
 
 ...
 
@@ -113,7 +116,7 @@ The upper series of plots allows to observe changes in sentiment scores when com
 
 ...
 
-
+-----------------
 ## We need more data! 
 As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
 
