@@ -82,7 +82,11 @@ The following table summarizes the data we may use for our analysis:
 | Ireland (IRE) | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
 | Canada (CAN) | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
 
-Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these leglizations.
+We plotted their respective sentiment score evolution across times:
+
+{% include interactive_legend.html %}
+
+These plots alone do not allow to infer anything apart from relative country's means if comparing a specific time point. Thus, for each of these, we separated the quites in two splits: before and after legalization. Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these legalizations.
 
 We could compute the following statistics in order to answer our question: 
 
@@ -92,15 +96,9 @@ We could compute the following statistics in order to answer our question:
 | United Kingdom | +0.22 | - | - |
 | Australia | +0.24 | -0.05 | 92% |
 | Ireland | +0.26 | +0.23 | 99% |
-| Canada | +0.26 | - | - |
-
-From this table, some insights can be gathered : 
+| Canada | +0.26 | - | - | 
 
 Irish speakers are the ones showing the most positive sentiments about same-sex marriage. There are also the ones that progress (positively) the most in their sentiments after legalization of same-sex marriages (with a significance of 99%). They are followed by Australians, who on the contrary show a slight reluctance after legalization (with a significance of 92%). Finally, Americans are also less optimistic on this new event (slight decrease in sentiment). Overall, it is interesting to note that on average, between 2015 and 2020, none of the nationalities are expressing negative sentiments. However, it does not mean that all speakers have positive opinions on this topic, it might actually differ between years and other speaker's specific features.
-
-{% include interactive_legend.html %}
-
-... Analysis of the plot ...
 
 <img src="assets/img/Q1_merged_plot_with_density.png" class = "center">
 
