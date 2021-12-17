@@ -51,6 +51,7 @@ The disparity between speakers can also be seen in their nationality and occupat
 
 American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
 
+
 Before taking a look at what our data can explain, let's get back to some programming concepts we will need in this analysis.
 
 -----------------
