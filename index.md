@@ -108,10 +108,12 @@ The upper series of plots allows to observe changes in sentiment scores when com
 
 ## Which features of the speakers have the most impact on their sentiment regarding the LGBT community ?  
 
+As stated before, thanks to Wikidata, we had access to several speaker's features. These features, such as nationality, occupation and age, could be the cause of some disparities between the speaker's sentiments. Let's see what we get!
+
+
 ### Which countries' opinions significantly contrast with others ?
 
 <embed type="text/html" src="assets/img/sentiment.html" width="800" height="600">
-
 On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done when the button "Per year" is clicked only. In 2020, it appears to be Russians, Americans, and Mexicans that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these 3 countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
 By clicking only the "mean" button, you can also display the average sentiment per country spanning across the 5 years. 
 
