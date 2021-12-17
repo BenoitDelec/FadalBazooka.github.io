@@ -45,13 +45,9 @@ Most of the quotes are related to the LGBT community (~40%), whereas the feminis
 
 While over 60% of the speakers are men, the *Other* category represents about 6% which in descending order of frequency appears like: [transgender female](https://en.wikipedia.org/wiki/Trans_woman), [gender fluid](https://www.health.harvard.edu/blog/gender-fluidity-what-it-means-and-why-support-matters-2020120321544), [transgender male](https://en.wikipedia.org/wiki/Trans_man), [non binary](https://en.wikipedia.org/wiki/Non-binary_gender), [bigender](https://gender.fandom.com/wiki/Bigender), [genderqueer](https://www.webmd.com/a-to-z-guides/what-does-genderqueer-mean), [shemale](https://en.wikipedia.org/wiki/Shemale), [two-spirit](https://en.wikipedia.org/wiki/Two-spirit), [third gender](https://en.wikipedia.org/wiki/Third_gender).
 
-The disparity between speakers can also be seen in their nationality distribution:
+The disparity between speakers can also be seen in their nationality and occupation distributions:
 
-<img src="assets/img/no_cut_natio.png" class = "center">   
-
-As well as their occupation distribution: 
-
-<img src="assets/img/no_cut_occupations.png" class = "center">
+{% include occ_nats_dictribution.html %}
 
 American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
 
@@ -105,7 +101,7 @@ Irish speakers are the ones showing the most positive sentiments about same-sex 
 
 <img src="assets/img/Q1_merged_plot_with_density.png" class = "center">
 
-The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes. In this section, we focused on one specific event related to one sub-community of the LGBT community. Now, we would like to extend our analysis to the community in its whole. For that, we will perform our sentiment analyis on a larger dataset, which includes all groups of LGBT community.   
+The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes. In this section, we focused on one specific event related to one sub-community of the LGBT community. Now, we would like to extend our analysis to the community in its whole. For that, we will perform our sentiment analyis on the speaker's quotes on a larger dataset, which includes all groups of LGBT community.    
 
 -----------------
 
@@ -117,8 +113,9 @@ As stated before, thanks to Wikidata, we had access to several speaker's feature
 ### Which countries' opinions significantly contrast with others ?
 
 <embed type="text/html" src="assets/img/sentiment.html" width="800" height="600">
-On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done when the button "Per year" is clicked only. In 2020, it appears to be Russians, Americans, and Mexicans that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these 3 countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
-By clicking only the "mean" button, you can also display the average sentiment per country spanning across the 5 years. 
+On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done by clicking on the "Per year" button only. In 2020, it appears to be Russians, Americans, and Mexicans speakers that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these 3 countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
+On the other hand, by clicking only the "mean" button, you can also display the average sentiment per country spanning across the 5 years.
+
 
 ### Are singers more friendly to the LGBT community than LGBT activists?
 
