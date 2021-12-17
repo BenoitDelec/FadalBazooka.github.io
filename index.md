@@ -20,38 +20,38 @@ These topics have been increasingly present in the media all over the world, yet
 ### Available data
 
 <img src="assets/img/wikidata_logo.png" alt="wikidata_logo" width="150" style="float:right"/>
-We acquired data from [*Quotebank : A Corpus of Quotations from a Decade of News*](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). It is a dataset of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. However, our analysis was restricted from the start of 2015 to mid-2020. In addition, we used the free and open knowledge base *Wikidata* in order to get speaker's attributes such as nationalities and occupations.
+We acquired data from [*Quotebank : A Corpus of Quotations from a Decade of News*](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). It is a dataset of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. However, our analysis was restricted from the start of 2015 to mid-2020. In addition, we used the free and open knowledge base *Wikidata* in order to get speaker's attributes such as nationalities, dates of births and occupations.
 
 ### Focus & Research questions 
 
-We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This bring us to the following questions: 
+We will focus on observing changes in the speakers’ opinions on the topics of gender equality and same-sex relationships, depending on their nationality, age, as well as occupation. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This brings us to the following questions: 
 
 - How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
-- Which features of the speakers have the most impact on their sentiment regarding the LGBT community ?
-  * Which countries’ opinions significantly contrast with others ?
-  * Are singers more friendly to the LGBT community than LGBT activists?
-  * 
+- Which features of the speakers mostly impact their sentiment regarding the LGBT community?
+  * Which countries’ opinions significantly contrast with others?
+  * Are artists more friendly to the LGBT community than LGBT activists?
+  * Are older people really anti-LGBT ?
 - Is it possible to predict speaker's attributes based on quotes ?
 
-Before answering to these questions, let's first have a visual look on our dataset.
+Before answering these questions, let's first visualize our dataset!
 
 ### First glimpse at the data
 
 <!--- _(add bar plot)!_ -->
 {% include years_distribution.html %}
-Each year from 2015 to 2019 is composed between 20K to 50K quotes. The number of quotes in 2020 is below 10K as we only had access to a part of the year!  
-Most of the quotes are related to the LGBT community (~40%), whereas the feminism topic is a bit less represented (~6-7%). However, we have access to enough data to make a complete analysis on gender norms.
+Each year from 2015 to 2019 is composed of 20'000 to 50'000 quotes. The number of quotes in 2020 is below 10'000 as we only had access to a part of the year.
+Most of the quotes are related to the LGBT community (~40%), whereas the feminism topic is a bit less represented (~6%). However, we had access to enough data to make a complete analysis of gender issues.
 
 <!--- _(add bar plot)!_ -->
 {% include gender_distribution2.html %}
 
-While over 60% of the speakers are men, the *Other* category represents about 6% which in descending order of frequency appears like: [transgender female](https://en.wikipedia.org/wiki/Trans_woman), [gender fluid](https://www.health.harvard.edu/blog/gender-fluidity-what-it-means-and-why-support-matters-2020120321544), [transgender male](https://en.wikipedia.org/wiki/Trans_man), [non binary](https://en.wikipedia.org/wiki/Non-binary_gender), [bigender](https://gender.fandom.com/wiki/Bigender), [genderqueer](https://www.webmd.com/a-to-z-guides/what-does-genderqueer-mean), [shemale](https://en.wikipedia.org/wiki/Shemale), [two-spirit](https://en.wikipedia.org/wiki/Two-spirit), [third gender](https://en.wikipedia.org/wiki/Third_gender).
+While over 60% of the speakers are men and over 32% are women, the *Other* category represents about 6% which, in descending order of frequency, appears as: [transgender female](https://en.wikipedia.org/wiki/Trans_woman), [gender fluid](https://www.health.harvard.edu/blog/gender-fluidity-what-it-means-and-why-support-matters-2020120321544), [transgender male](https://en.wikipedia.org/wiki/Trans_man), [non binary](https://en.wikipedia.org/wiki/Non-binary_gender), [bigender](https://gender.fandom.com/wiki/Bigender), [genderqueer](https://www.webmd.com/a-to-z-guides/what-does-genderqueer-mean), [shemale](https://en.wikipedia.org/wiki/Shemale), [two-spirit](https://en.wikipedia.org/wiki/Two-spirit), [third gender](https://en.wikipedia.org/wiki/Third_gender).
 
 The disparity between speakers can also be seen in their nationality and occupation distributions:
 
 {% include occ_nats_dictribution.html %}
 
-American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
+Americans and politicians are the ones talking the most about gender issues. Actors and journalists are also recurring occupations. Without surprise, LGBTIQ+ rights activists are also quite present.
 
 
 Before taking a look at what our data can explain, let's get back to some programming concepts we will need in this analysis.
@@ -59,22 +59,18 @@ Before taking a look at what our data can explain, let's get back to some progra
 -----------------
 ## What is sentiment analysis ?
 
-[Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and postive extrema, respectively. In fact, the *compound* score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive). The closer this *compound* to +1, the higher the positivity of the text.
-
-## What is stance ?
-
+[Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), also referred to as opinion mining, is a classification technique which aims to analyze sentences to extract the expressed sentiment from them, and capture how positive or negative this statement is. In our analysis, the VADER library from [NLTK - Natural Language Toolkit](https://www.nltk.org) library was used and allowed to compute sentiment scores ranging from -1 to +1, corresponding to negative and positive extrema, respectively. In fact, the *compound* score was the one we selected and is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive). 
 Sentiment analysis is thus a useful way to quantify a feeling from a text, but it is based on emotions rather than opinions.
-
-Thus, [stance analysis](https://en.wikipedia.org/wiki/Stance_(linguistics)) goes beyond this border, by determining if two sentences converge to similar or different opinions. This technique provides a classification of a list quotes when comparing with a *model* quote, by categorizing them into 4 sets: *agree*, *disagree*, *uncertain*, and *unrelated*.
+Let's dive into research questions ! 
 
 -----------------
 ## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
 
-The first purpose of our analysis is to focus on a political aspect of same-sex relations, and in particular such a marriage legalization. We indeed believe that such this legal process became popular in countries following people agreement to integrate it in their public life. In this way, an increasing popularity of the same-sex mariage topic could correlate with legal outcomes.
+The first purpose of our analysis is to focus on a political aspect of same-sex relations, and in particular marriage legalization. We indeed believe that this legal process became popular in countries following people's agreement to integrate it into their public life. In this way, an increasing popularity of the same-sex mariage topic could correlate with legal outcomes.
 
 To compare the average sentiment on same-sex marriage before and after its legalization, we picked countries where the number of quotes could allow basic statistical assessments, by picking only those with at least 100 quotes related to this topic.
 
-The following table summarizes the data we may use for our analysis:
+The following table summarizes the data we used for our analysis:
 
 | Country | Number of quotes | Legalization date |
 |:-------:|:--------:|:---------:|
@@ -84,13 +80,13 @@ The following table summarizes the data we may use for our analysis:
 | Ireland (IRE) | 277 | [11/2015](https://en.wikipedia.org/wiki/Same-sex_marriage_in_the_Republic_of_Ireland) |
 | Canada (CAN) | 259 | [07/2005](https://en.wikipedia.org/wiki/Same-sex_marriage_in_Canada) |
 
-We plotted their respective sentiment score evolution across times:
+We plotted their respective sentiment score evolution versus time:
 
 {% include interactive_legend.html %}
 
-These plots alone do not allow to infer anything apart from relative country's means if comparing a specific time point. Thus, for each of these, we separated the quotes in two splits: before and after legalization. Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these legalizations.
+This figure alone does not allow to infer anything, apart from relative countries'means, if comparing a specific time point. Thus, for each of these countries, we separated the quotes in two splits: before and after legalization. Given United Kingdom and Canada did undergo legal procedures before 2015 the oldest datapoint we had accessed to - we could not assess anything regarding the trends in sentiment before and after the legalization in these two countries.
 
-We could compute the following statistics in order to answer our question: 
+We could therefore compute the following statistics in order to answer our question: 
 
 | Country | Average sentiment <br> (-1 to +1) | Sentiment progress following legalization | Significance |
 |:-------:|:---------:|:---------:|:---------:|
@@ -100,17 +96,21 @@ We could compute the following statistics in order to answer our question:
 | Ireland | +0.26 | +0.23 | 99% |
 | Canada | +0.26 | - | - | 
 
-Irish speakers are the ones showing the most positive sentiments about same-sex marriage. There are also the ones that progress (positively) the most in their sentiments after legalization of same-sex marriages (with a significance of 99%). They are followed by Australians, who on the contrary show a slight reluctance after legalization (with a significance of 92%). Finally, Americans are also less optimistic on this new event (slight decrease in sentiment). Overall, it is interesting to note that on average, between 2015 and 2020, none of the nationalities are expressing negative sentiments. However, it does not mean that all speakers have positive opinions on this topic, it might actually differ between years and other speaker's specific features.
+Irish speakers are the ones showing the most positive sentiments about same-sex marriage. There are also the ones that progress (positively) the most in their sentiments after the legalization (with a significance of 99%). They are followed by Australians, who, on the contrary, show a slight reluctance after legalization (with a significance of 92%). Finally, Americans are also less positive about this new event (slight decrease in sentiment). Overall, it is interesting to note that between 2015 and 2020, all three countries'average are positive. However, it does not mean that all speakers have positive opinions on this topic, it might actually differ across years.
 
 <img src="assets/img/Q1_merged_plot_with_density.png" class = "center">
 
-The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes. In this section, we focused on one specific event related to one sub-community of the LGBT community. Now, we would like to extend our analysis to the community in its whole. For that, we will perform our sentiment analyis on the speaker's quotes on a larger dataset, which includes all groups of LGBT community.    
+The upper series of plots allows observing changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these average curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the mean of the corresponding sentiment curve. 
+
+The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed, as the effect of legalization at a country's scale does not seem to lead to strong opinion change. 
+
+In this section, we focused on one specific event related to one sub-community of the LGBT community. Now, we would like to extend our analysis to the community as a whole. In this purpose, we will perform our sentiment analysis on a larger dataset, which includes all groups of LGBT community.    
 
 -----------------
 
 ## Which features of the speakers have the most impact on their sentiment regarding the LGBT community ?  
 
-As stated before, thanks to Wikidata, we had access to several speaker's features. These features, such as nationality, occupation and age, could be the cause of some disparities between the speaker's sentiments. Let's see what we get!
+As stated before, thanks to Wikidata, we had access to several speaker's features. These features, such as nationality, occupation and age, could cause  disparities between speaker'sentiments. Let's see what we get!
 
 
 ### Which countries' opinions significantly contrast with others ?
@@ -132,7 +132,7 @@ The wide confidence interval in 2020 demonstrates that attitudes towards this to
 LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
 Also, based on the Kruskal-Wallis test, it was demonstrated that the p-value for the distributions of sentiments depending on the occupation is 1e-124, and therefore the medians of these samples differ significantly.
 
-### Older male have more negative opinions? 
+### Are older people really anti-LGBT? 
 
 <center>
 {% include gender_age.html %}
