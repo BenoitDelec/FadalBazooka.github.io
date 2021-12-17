@@ -124,6 +124,9 @@ The opinion of journalists also changed insignificantly over time, medians and a
 The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude to this topic, while lawyers speak out the most negatively.
 LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
 
+### What social groups have the most positive and negative sentiment regarding LGBT issues? 
+In addition to the fixed features, we analyzed the sentiments of social groups characterized by age, occupation and nationality. Basically, the most negative statements about the LGBT community are written by politicians and businessmen from the USA over 70 years old. The most positive statements are written by politicians and activists from the USA aged 45 to 60 years, as well as actors, activists and politicians from the USA and Australia aged 40 to 70 years.
+
 -----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
 #### WARNING: This section contains advanced programming content - read at your own risk.
