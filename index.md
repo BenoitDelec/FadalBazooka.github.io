@@ -107,7 +107,7 @@ The upper series of plots allows to observe changes in sentiment scores when com
 -----------------
 ## Which countries' opinions significantly contrast with others ?
 
-...
+{% include sentiment.html %}
 
 -----------------
 ## Could we predict an author's nationality based on a quote ?
