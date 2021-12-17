@@ -116,21 +116,23 @@ As stated before, thanks to Wikidata, we had access to several speaker's feature
 ### Which countries' opinions significantly contrast with others ?
 
 <embed type="text/html" src="assets/img/sentiment.html" width="800" height="600">
-On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done by clicking on the "Per year" button only. In 2020, it appears to be Russians, Americans, and Mexicans speakers that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these 3 countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
-On the other hand, by clicking only the "mean" button, you can also display the average sentiment per country spanning across the 5 years.
+On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done by clicking on the "Per year" button only. In 2020, it appears to be Russians, Americans, and Mexicans speakers that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these three countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
+On the other hand, by selecting only the "mean" button, you can also display the average sentiment per country spanning across the five years.
 
 
 ### Are singers more friendly to the LGBT community than LGBT activists?
 
 {% include median_mean.html %}
 
-While the sentiments of different nationalities differ slightly, the occupation shows a lot of difference. This was also demonstrated in regression analysis, in which occupation was more important than nationality and age.
-On the graph, the dots represent the medians of sentiments for each year, the line represents the average with a 95% confidence interval filled with color.
-The opinion of politicians has been the most stable in recent years. Judging by the difference between the mean and the median, opinions among politicians differ, while there are sharp negative statements.
-The opinion of journalists also changed insignificantly over time, medians and averages do not differ much, which means that, on average, journalists coincide in opinion. Over time, attitudes of lawyers towards this topic have worsened, while film directors, on the contrary, have improved.
-The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude to this topic, while lawyers speak out the most negatively.
-LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
-Also, based on the Kruskal-Wallis test, it was demonstrated that the p-value for the distributions of sentiments depending on the occupation is 1e-124, and therefore the medians of these samples differ significantly.
+While the sentiments of different nationalities slightly differ, speaker occupations show major differences. This was also demonstrated through a [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis), in which occupation was found to be the more important feature, before nationality and age.
+On the graph, dots represent medians of sentiments for each year, lines represent the average with a 95% [confidence interval](https://en.wikipedia.org/wiki/Confidence_interval).
+The politician's opinion has been the most stable in recent years. Judging by the difference between mean and median, opinions among politicians differ, while showing sharp negative statements.
+The opinion of journalists did not change significantly over time, medians and averages do not differ much, which means that, on average, journalists coincide in opinion. Over time, attitudes of lawyers towards this topic have worsened, while those of film directors, on the contrary, have improved.
+The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude towards this topic, while lawyers speak out the most negatively.
+LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they do not not only express words of support, but they also voice real problems in this area. These could be perceived by the algorithm as a negative statement.
+
+
+Also, based on the [Kruskal-Wallis](https://en.wikipedia.org/wiki/Kruskal–Wallis_one-way_analysis_of_variance) test, it was demonstrated that the [p-value](https://en.wikipedia.org/wiki/P-value) for the distributions of sentiments depending on the occupation is extremely small, and therefore the medians of these samples differ significantly.
 
 ### Are older people really anti-LGBT? 
 
@@ -142,8 +144,9 @@ There is a stereotype that older people have a negative attitude towards the LGB
 -----------------
 ## Conclusion
 
-Our data story tries to highlight the evolution of gender norms over time and how populations have accepted or not this new uderstanding of the identity of individuals. We started with a relatively gender-balanced database, but with an over-representation of the United States and politicians, who are the ones who are most quoted in newspapers on this topic. Our main tool for understanding the evolution of mentalities was sentiment analysis. This allowed us to evaluate the evolution of feelings about same-sex marriage and to see that the legalization of same-sex marriage has different impacts in different countries and to contrast these differences clearly, which are due, for example, to cultural differences. On the other hand, we have studied the differences in feelings about the lgbt cause according to the profession. And clear differences appeared between certain professions such as actors who talk about it in a positive way and lawyers who talk about it in a negative way. 
-Thanks to these results, we can make a first panorama of the evolution of mentalities according to time, country and age of the people quoted. 
+Our data story tried to highlight the evolution of gender norms over time and how populations have accepted or not this new uderstanding of individual's identities. We started with a relatively gender-balanced database. However, in terms of country of origin and author's occupation, the United States and the politicians are highly represented. Our main tool for understanding the evolution of mentalities was sentiment analysis. This allowed us evaluating the evolution of feelings about same-sex marriage and seeing that the legalization of same-sex marriage has different impacts in different countries. These differences could be potentially due to cultural differences. On the other hand, we have studied the differences in feelings about the LGBT cause according to the occupation. Clear differences appeared between certain occupations such as actors being more positive than lawyers.
+Thanks to these results, we can make a first panorama of the evolution of mentalities according to time, country and age of the people quoted.
+
 
 -----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
