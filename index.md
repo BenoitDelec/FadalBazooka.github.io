@@ -86,7 +86,7 @@ We plotted their respective sentiment score evolution across times:
 
 {% include interactive_legend.html %}
 
-These plots alone do not allow to infer anything apart from relative country's means if comparing a specific time point. Thus, for each of these, we separated the quites in two splits: before and after legalization. Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these legalizations.
+These plots alone do not allow to infer anything apart from relative country's means if comparing a specific time point. Thus, for each of these, we separated the quotes in two splits: before and after legalization. Given United Kingdom and Canada did undergo legal procedures before the first data we could access from *Quotebank* dataset, we could not assess anything regarding the trends in sentiment before and after these legalizations.
 
 We could compute the following statistics in order to answer our question: 
 
@@ -105,13 +105,26 @@ Irish speakers are the ones showing the most positive sentiments about same-sex 
 The upper series of plots allows to observe changes in sentiment scores when comparing the periods before and after same-sex marriage legalization. Contrasts are not always crystal clear. One should pay attention to the fact that these averages curves reflect averages by quote rather than averages by month, which explains why these average lines do not always seem to be the average of the corresponding sentiment curve. The lower series of plots shows the number of quotes per month, which can be interpreted as a popularity metric. This time, contrasts can be much more easily visualized, and a clear trend appears : the popularity of the same-sex marriage topic decreases straight after its legalization. On the other hand, conclusions regarding its effect on quotes' sentiment can hardly be assessed as the effect of legalization at large scale does not seem to lead to strong changes.
 
 -----------------
-## Which countries' opinions significantly contrast with others ?
+
+## Which features of the speakers have the most impact on their sentiment regarding the LGBT community ?  
+
+### Which countries' opinions significantly contrast with others ?
 
 <embed type="text/html" src="assets/img/sentiment.html" width="800" height="600">
 
 On the above map, you can interactively see how the sentiments on the LGBT community evolved in different countries within the world, year after year from 2015 to 2020. This can be done when the button "Per year" is clicked only. In 2020, it appears to be Russians, Americans, and Mexicans that express the most positive sentiments (~0.3, 0.4 and 0.28 respectively). It is interesting to note that in 2015, thoses results were completely different, as these 3 countries expressed relatively neutral sentiments concerning LGBT community. However, it should be taken with a grain of salt as the dataset for this year was relatively lower than the previous ones. 
 By clicking only the "mean" button, you can also display the average sentiment per country spanning across the 5 years. 
 
+### Are singers more friendly to the LGBT community than LGBT activists?
+
+{% include median_mean.html %}
+
+While the sentiments of different nationalities differ slightly, the occupation shows a lot of difference. This was also demonstrated in regression analysis, in which occupation was more important than nationality and age.
+On the graph, the dots represent the medians of sentiments for each year, the line represents the average with a 95% confidence interval filled with color.
+The opinion of politicians has been the most stable in recent years. Judging by the difference between the mean and the median, opinions among politicians differ, while there are sharp negative statements.
+The opinion of journalists also changed insignificantly over time, medians and averages do not differ much, which means that, on average, journalists coincide in opinion. Over time, attitudes of lawyers towards this topic have worsened, while film directors, on the contrary, have improved.
+The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude to this topic, while lawyers speak out the most negatively.
+LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
 
 -----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
