@@ -12,8 +12,10 @@ use-site-title: true
 
 Gender norms are social principles that govern the behavior of all of us in society and restrict our gender identity into what is considered to be appropriate. These are neither static nor universal and change over time, and can result in inequalities.
 
-More and more countries have recently legalized and recognized same-sex marriage, sometimes following long legal procedures. In Switzerland, this law was introduced in 2013, passed in 2020 by the parliament and adopted by referendum in September 2021. The feminism topic also indicates real changes in society. [LGBT](https://en.wikipedia.org/wiki/LGBT_community) issues are also extremely present in public life, with emerging pride movements and pure gender questioning. 
-These topics have been more and more present in the media all over the world, and are still facing divergent opinions. In this review, we'll dive into this complex phenomenon, analyzing the different trends and opinions worldwide.
+
+[LGBT](https://en.wikipedia.org/wiki/LGBT_community) issues are  extremely present in public life, with emerging pride movements and pure gender questioning. 
+More and more countries have recently legalized and recognized same-sex marriage, sometimes following long legal procedures. In Switzerland, where we are based, this law was introduced in 2013, passed in 2020 by the parliament and adopted by referendum in September 2021. 
+These topics have been increasingly present in the media all over the world, yet are still facing divergent opinions. In this review, we'll dive into this complex phenomenon, analyzing the different trends and opinions worldwide. 
 
 ### Available data
 
