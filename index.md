@@ -107,9 +107,8 @@ The upper series of plots allows to observe changes in sentiment scores when com
 -----------------
 ## Which countries' opinions significantly contrast with others ?
 
-<embed type="text/html" src="assets/img/sentiment.html" width="600" height="400"></embed>
+<embed type="text/html" src="assets/img/sentiment.html" width="800" height="600">
 
-{% include sentiment.html %}
 
 
 -----------------
