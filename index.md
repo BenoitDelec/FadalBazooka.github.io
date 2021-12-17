@@ -131,7 +131,7 @@ LGBT activists, on the other hand, occupy an intermediate position. Most likely,
 
 ### Older male have more negative opinions? 
 
-<embed type="text/html" src="assets/img/gender_age.html" class = "center">
+{% include gender_age.html %}
 
 There is a stereotype that older people have a negative attitude towards the LGBT community. In addition, it is believed that men are dismissive of gender-related issues. However, having analyzed the distribution of sentiments in relation to age and gender, we can conclude that there is a significant similarity in the form of distribution of sentiments for people of different ages and genders. Taking into account the ideas already expressed about the characteristics of the speakers, we can come to the conclusion that neither gender, nor age, nor country of origin affects a person's opinion about gender issues (and possibly others) in the modern world, but the type of activity that the person chooses himself. Once again, this confirms the importance of eliminating discrimination based on age, gender and nationality.
 
