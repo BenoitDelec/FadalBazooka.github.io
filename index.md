@@ -139,19 +139,28 @@ There is a stereotype that older people have a negative attitude towards the LGB
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
 #### WARNING: This section contains advanced programming content - read at your own risk.
 
-As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
+Gender equality being an emerging and modern topic, more and more people discuss it, but not all of them are *famous*. 
+In our dataset, 30% of speakers are not referenced in Wikidata, so we actually lost 30% of potentially meaningful and interesting data points given we were not able to relate such quotes with the parameters we were interested in. 
+In order not to lose this part of the data, we desire to add synthetic features to these, by training a classification model. 
+We expect to obtain such feature variables (nationality, age...) by using a neural network approach, trained with a set of quotes, where these feature labels were obtained from Wikidata, and which could eventually predict these from a further set of input quotes.
 
-Firstly, we started by simple LSTM + Linear model to predict nationality and age of the quote’s speaker. To implement this we used PyTorch framework, wrote classes of dataset, training and model. As embedding we used Twitter-roBERTa-base pretrained tokenizer. But the model was too simple and we got ~30% by F1 metric. 
-So we took a more complex model - GPT2 in order to predict the nationality of the speaker by its quote. At the first sight, we got better results ~70% on the validation set. 
+Firstly, we started by combining the {LSTM}(https://en.wikipedia.org/wiki/Long_short-term_memory) approach with a simple linear model to predict nationality and age of the quote’s author. 
+We implemented it with a {PyTorch}(https://github.com/pytorch/pytorch) framework, specified dataset’s classes, trained, and then extracted the model. 
+For embedding, we used the {Twitter-roBERTa-base}( https://pytorch.org/hub/pytorch_fairseq_roberta/) pretrained tokenizer. 
+This model seemed too simple compared to real-life parameters, which let to only ~30% {F1}( https://en.wikipedia.org/wiki/F-score) metric (harmonic mean of the precision and recall, that is positive predicted value and sensitivity)...
+
+Hence, we decided to implement a more complex model: {GPT2}( https://en.wikipedia.org/wiki/GPT-2), in order to predict the nationality of the speaker from its quote. 
+At first sight, we got better results: ~70% on the validation set, as can be seen below.
 
 {% include imbalanced.html %}
 
-But after checking the confusion matrix we found out that the model returns the most frequent value all the time, so we balanced classes. 
+However, after checking the related {confusion matrix}( https://en.wikipedia.org/wiki/Confusion_matrix), we found out that the model simply returns the most frequent value in nearly all cases. To counter this effect, we restricted our dataset to a “balanced” one, where all countries were represented by the same number of quotes in the training set, leading to the results below.
 
 {% include conf.html %}
 
-Finally we got much worse results which didn’t seem to improve as we saw by the validation loss plot. 
+These results being actually worse and not improving, as we see by the validation loss plot below, we deduced this model is not sufficient to solve our concerns.
 
 {% include balanced.html %}
 
-Based on the quote it seems impossible to predict a nationality, because of the globalisation process and information spread on the Internet. Not many countries are completely isolated and there are always different sources of information, so people’s mindset can’t be defined by their location. 
+It finally seems obvious that people’s minds are not only determined by their nationality, and neither is the reciprocal. 
+Globalization being a key issue nowadays, which allows worldwide information flow and knowledge share, a single quote related to gender issues cannot be straight attributed to a nationality.
