@@ -146,15 +146,15 @@ We expect to obtain such feature variables (nationality, age...) by using a neur
 
 Firstly, we started by combining the {LSTM}(https://en.wikipedia.org/wiki/Long_short-term_memory) approach with a simple linear model to predict nationality and age of the quote’s author. 
 We implemented it with a {PyTorch}(https://github.com/pytorch/pytorch) framework, specified dataset’s classes, trained, and then extracted the model. 
-For embedding, we used the {Twitter-roBERTa-base}( https://pytorch.org/hub/pytorch_fairseq_roberta/) pretrained tokenizer. 
-This model seemed too simple compared to real-life parameters, which let to only ~30% {F1}( https://en.wikipedia.org/wiki/F-score) metric (harmonic mean of the precision and recall, that is positive predicted value and sensitivity)...
+For embedding, we used the {Twitter-roBERTa-base}(https://pytorch.org/hub/pytorch_fairseq_roberta/) pretrained tokenizer. 
+This model seemed too simple compared to real-life parameters, which let to only ~30% {F1}(https://en.wikipedia.org/wiki/F-score) metric (harmonic mean of the precision and recall, that is positive predicted value and sensitivity)...
 
-Hence, we decided to implement a more complex model: {GPT2}( https://en.wikipedia.org/wiki/GPT-2), in order to predict the nationality of the speaker from its quote. 
+Hence, we decided to implement a more complex model: {GPT2}(https://en.wikipedia.org/wiki/GPT-2), in order to predict the nationality of the speaker from its quote. 
 At first sight, we got better results: ~70% on the validation set, as can be seen below.
 
 {% include imbalanced.html %}
 
-However, after checking the related {confusion matrix}( https://en.wikipedia.org/wiki/Confusion_matrix), we found out that the model simply returns the most frequent value in nearly all cases. To counter this effect, we restricted our dataset to a “balanced” one, where all countries were represented by the same number of quotes in the training set, leading to the results below.
+However, after checking the related {confusion matrix}(https://en.wikipedia.org/wiki/Confusion_matrix), we found out that the model simply returns the most frequent value in nearly all cases. To counter this effect, we restricted our dataset to a “balanced” one, where all countries were represented by the same number of quotes in the training set, leading to the results below.
 
 {% include conf.html %}
 
