@@ -63,7 +63,7 @@ Before taking a look at what our data can explain, let's get back to some progra
 
 Sentiment analysis is thus a useful way to quantify a feeling from a text, but it is based on emotions rather than opinions.
 
-Thus, [stance analysis](https://en.wikipedia.org/wiki/Stance_(linguistics)) goes beyond this border, by determining if two sentences converge to similar or different opinions. This technique provides a classification of a list quotes when comparing with a *model* quote, by categorizing them into 4 sets : *agree*, *disagree*, *uncertain*, and *unrelated*.
+Thus, [stance analysis](https://en.wikipedia.org/wiki/Stance_(linguistics)) goes beyond this border, by determining if two sentences converge to similar or different opinions. This technique provides a classification of a list quotes when comparing with a *model* quote, by categorizing them into 4 sets: *agree*, *disagree*, *uncertain*, and *unrelated*.
 
 -----------------
 ## How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
@@ -112,7 +112,8 @@ The upper series of plots allows to observe changes in sentiment scores when com
 
 
 -----------------
-## Could we predict an author's nationality based on a quote ?
+## Attempting a further step: could we predict an author's nationality based on a quote ?
+#### WARNING: Contains advanced programming content - read at your own risk
 
 As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
 
