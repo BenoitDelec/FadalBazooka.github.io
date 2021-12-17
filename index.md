@@ -137,6 +137,12 @@ LGBT activists, on the other hand, occupy an intermediate position. Most likely,
 There is a stereotype that older people have a negative attitude towards the LGBT community. In addition, it is believed that men are dismissive of gender-related issues. However, having analyzed the distribution of sentiments in relation to age and gender, we can conclude that there is a significant similarity in the form of distribution of sentiments for people of different ages and genders. Taking into account the ideas already expressed about the characteristics of the speakers, we can come to the conclusion that neither gender, nor age, nor country of origin affects a person's opinion about gender issues (and possibly others) in the modern world, but the type of activity that the person chooses himself. Once again, this confirms the importance of eliminating discrimination based on age, gender and nationality.
 
 -----------------
+## Conclusion
+
+Our data story tries to highlight the evolution of gender norms over time and how populations have accepted or not this new uderstanding of the identity of individuals. We started with a relatively gender-balanced database, but with an over-representation of the United States and politicians, who are the ones who are most quoted in newspapers on this topic. Our main tool for understanding the evolution of mentalities was sentiment analysis. This allowed us to evaluate the evolution of feelings about same-sex marriage and to see that the legalization of same-sex marriage has different impacts in different countries and to contrast these differences clearly, which are due, for example, to cultural differences. On the other hand, we have studied the differences in feelings about the lgbt cause according to the profession. And clear differences appeared between certain professions such as actors who talk about it in a positive way and lawyers who talk about it in a negative way. 
+Thanks to these results, we can make a first panorama of the evolution of mentalities according to time, country and age of the people quoted. 
+
+-----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
 #### WARNING: This section contains advanced programming content - read at your own risk.
 
