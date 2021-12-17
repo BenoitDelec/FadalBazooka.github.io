@@ -128,13 +128,14 @@ The opinion of politicians has been the most stable in recent years. Judging by 
 The opinion of journalists also changed insignificantly over time, medians and averages do not differ much, which means that, on average, journalists coincide in opinion. Over time, attitudes of lawyers towards this topic have worsened, while film directors, on the contrary, have improved.
 The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude to this topic, while lawyers speak out the most negatively.
 LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
+Also, based on the Kruskal-Wallis test, it was demonstrated that the p-value for the distributions of sentiments depending on the occupation is 1e-124, and therefore the medians of these samples differ significantly.
 
 ### Older male have more negative opinions? 
 
 <center>
 {% include gender_age.html %}
 </center>
-There is a stereotype that older people have a negative attitude towards the LGBT community. In addition, it is believed that men are dismissive of gender-related issues. However, having analyzed the distribution of sentiments in relation to age and gender, we can conclude that there is a significant similarity in the form of distribution of sentiments for people of different ages and genders. Taking into account the ideas already expressed about the characteristics of the speakers, we can come to the conclusion that neither gender, nor age, nor country of origin affects a person's opinion about gender issues (and possibly others) in the modern world, but the type of activity that the person chooses himself. Once again, this confirms the importance of eliminating discrimination based on age, gender and nationality.
+There is a stereotype that older people have a negative attitude towards the LGBT community. In addition, it is believed that men are dismissive of gender-related issues. The graph above shows the distribution of sentiments by gender (male, female and others) and age (under 40 - younger, from 40 to 60 years - boomers and over 60 years - older. However, having analyzed the distribution of sentiments in relation to age and gender, we can conclude that there is a significant similarity in the form of distribution of sentiments for people of different ages and genders. Taking into account the ideas already expressed about the characteristics of the speakers, we can come to the conclusion that neither gender, nor age, nor country of origin affects a person's opinion about gender issues (and possibly others) in the modern world, but the type of activity that the person chooses himself. Once again, this confirms the importance of eliminating discrimination based on age, gender and nationality.
 
 -----------------
 ## Conclusion
