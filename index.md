@@ -25,7 +25,10 @@ We acquired data from [*Quotebank : A Corpus of Quotations from a Decade of News
 We will focus on observing changes in the speakers’ opinion on the topics of gender equality and same-sex relations, depending on their nationality, age, as well as possibly occupation, and quote date. It is also of interest to compare opinions within countries before and after national events, such as same-sex marriage legalization. This bring us to the following questions: 
 
 - How legalization of same-sex marriage influenced the opinion of the authors of the quotes?
-- Which countries' opinions significantly contrast with others ? 
+- Which features of the speakers have the most impact on their sentiment regarding the LGBT community ?
+  * Which countries’ opinions significantly contrast with others ?
+  * Are singers more friendly to the LGBT community than LGBT activists?
+  * 
 - Is it possible to predict speaker's attributes based on quotes ?
 
 Before answering to these questions, let's first have a visual look on our dataset.
@@ -42,11 +45,15 @@ Most of the quotes are related to the LGBT community (~40%), whereas the feminis
 
 While over 60% of the speakers are men, the *Other* category represents about 6% which in descending order of frequency appears like: [transgender female](https://en.wikipedia.org/wiki/Trans_woman), [gender fluid](https://www.health.harvard.edu/blog/gender-fluidity-what-it-means-and-why-support-matters-2020120321544), [transgender male](https://en.wikipedia.org/wiki/Trans_man), [non binary](https://en.wikipedia.org/wiki/Non-binary_gender), [bigender](https://gender.fandom.com/wiki/Bigender), [genderqueer](https://www.webmd.com/a-to-z-guides/what-does-genderqueer-mean), [shemale](https://en.wikipedia.org/wiki/Shemale), [two-spirit](https://en.wikipedia.org/wiki/Two-spirit), [third gender](https://en.wikipedia.org/wiki/Third_gender).
 
-The disparity between speakers can also be seen in their nationality and occupation distributions :
+The disparity between speakers can also be seen in their nationality distribution:
 
-{% include occ_nats_dictribution.html %}
+<img src="assets/img/no_cut_natio.png" class = "center">   
 
-American politicians are the ones talking the most on the LGBT community, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
+As well as their occupation distribution: 
+
+<img src="assets/img/no_cut_occupations.png" class = "center">
+
+American politicians are the ones talking the most on the gender norms, followed by actors and journalists. Without surprise, LGBTIQ+ rights activists are also quite present.
 
 Before taking a look at what our data can explain, let's get back to some programming concepts we will need in this analysis.
 
@@ -123,9 +130,6 @@ The opinion of politicians has been the most stable in recent years. Judging by 
 The opinion of journalists also changed insignificantly over time, medians and averages do not differ much, which means that, on average, journalists coincide in opinion. Over time, attitudes of lawyers towards this topic have worsened, while film directors, on the contrary, have improved.
 The wide confidence interval in 2020 demonstrates that attitudes towards this topic have become more diverse, which indicates a wide discussion in society. Singers and actors have the most positive attitude to this topic, while lawyers speak out the most negatively.
 LGBT activists, on the other hand, occupy an intermediate position. Most likely, this is due to the fact that they speak not only words of support, but also voice real problems in this area, which could be perceived by the algorithm as a negative statement, but which was actually voiced in support of the LGBT community.
-
-### What social groups have the most positive and negative sentiment regarding LGBT issues? 
-In addition to the fixed features, we analyzed the sentiments of social groups characterized by age, occupation and nationality. Basically, the most negative statements about the LGBT community are written by politicians and businessmen from the USA over 70 years old. The most positive statements are written by politicians and activists from the USA aged 45 to 60 years, as well as actors, activists and politicians from the USA and Australia aged 40 to 70 years.
 
 -----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
