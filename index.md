@@ -113,7 +113,7 @@ The upper series of plots allows to observe changes in sentiment scores when com
 
 -----------------
 ## Attempting a further step: could we predict an author's nationality based on a quote ?
-#### WARNING: Contains advanced programming content - read at your own risk
+#### WARNING: This section contains advanced programming content - read at your own risk.
 
 As gender equality is an emerging topic, there are more and more people discussing it. So not all of them are famous. In our dataset, 30% of speakers are not referenced in Wikidata. In order not to lose data we decided to add synthetic features by training the classification model. We expected to obtain the feature (nationality, age etc) using neural networks approach giving it a quote as input. 
 
